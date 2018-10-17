@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timg2"
+    tools:context="com.example.miogk.myhupu.GuideActivity">
+
+    <Button
+        android:id="@+id/bt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentRight="true"
+        android:text="3"
+        android:textColor="#ffff" />
+</RelativeLayout>

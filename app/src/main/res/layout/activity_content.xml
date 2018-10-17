@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.miogk.myhupu.ContentActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/activity_content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_content_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="titleeeeeeeeeeeeee"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_content_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="1111-11-11 11:11"
+                android:padding="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#C0C0C0" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/activity_content_image"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/bbsimgai" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#C0C0C0" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/activity_content_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingMultiplier="1.5"-->
+            <!--android:padding="5dp"-->
+            <!--android:textSize="18sp" />-->
+
+            <WebView
+                android:id="@+id/activity_content_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"></WebView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#C0C0C0" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<ListView-->
+    <!--android:id="@+id/activity_content_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"></ListView>-->
+</LinearLayout>

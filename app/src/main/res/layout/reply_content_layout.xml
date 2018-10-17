@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/reply_content_layout_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/shihuhu" />
+
+    <TextView
+        android:id="@+id/reply_content_layout_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/reply_content_layout_imageview"
+        android:hint="哈哈哈哈哈"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/reply_content_layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/reply_content_layout_username"
+        android:layout_below="@id/reply_content_layout_username"
+        android:layout_marginTop="5dp"
+        android:hint="5分钟前"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:id="@+id/reply_content_layout_reference_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/reply_content_layout_username"
+        android:layout_below="@id/reply_content_layout_time"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="引用@" />
+
+            <TextView
+                android:id="@+id/reply_content_layout_reference_content_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="miollll"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发表的" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reply_content_layout_reference_content_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="简单说明一下，各位JRS，除了上个帖子的“一球双进”投篮比较难，尝试超过10分钟，其他投篮都在10分钟内完成，感兴趣可以翻看我之前发布的视频"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reply_content_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/reply_content_layout_time"
+        android:layout_below="@id/reply_content_layout_reference_content"
+        android:layout_marginTop="5dp"
+        android:hint="这里是回帖内容"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/reply_content_layout_reference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reply_content_layout_username"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/reply_content_layout_number"
+        android:hint="引用"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/reply_content_layout_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/reply_content_layout_username"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:hint="#1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/reply_content_layout_time"
+        android:layout_below="@+id/reply_content_layout_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/reply_content_lighten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮了" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(" />
+
+        <TextView
+            android:id="@+id/reply_content_lighten_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")" />
+
+        <LinearLayout
+            android:id="@+id/reply_content_all_reply_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/reply_content_all_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="查看回复" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(" />
+
+            <TextView
+                android:id="@+id/reply_content_reply_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

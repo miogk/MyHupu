@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.miogk.myhupu.setting.MessagePageActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/message_page_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/message_page_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/message_page_remind_me"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/setting_message_background_change"
+                android:button="@null"
+                android:checked="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="提到我的"
+                android:textColor="@drawable/setting_message_textcolor_change"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/setting_message_background_middle_change"
+                android:button="@null"
+                android:gravity="center"
+                android:text="帖子回复"
+                android:textColor="@drawable/setting_message_textcolor_change"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/setting_message_background_middle_change"
+                android:button="@null"
+                android:gravity="center"
+                android:text="亮了/分享"
+                android:textColor="@drawable/setting_message_textcolor_change"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/setting_message_background_end_change"
+                android:button="@null"
+                android:gravity="center"
+                android:text="私信"
+                android:textColor="@drawable/setting_message_textcolor_change"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

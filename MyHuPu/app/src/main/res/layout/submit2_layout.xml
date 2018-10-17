@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/submit2_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:drawableLeft="@mipmap/lanqiuchang"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:hint="登录名/手机号/邮箱"
+            android:maxLines="1"
+            android:paddingBottom="15dp"
+            android:paddingTop="20dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/submit2_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:drawableLeft="@mipmap/lanqiuchang"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingBottom="15dp"
+            android:paddingTop="20dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:background="@null"
+        android:id="@+id/submit2_submit_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:text="立即注册"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
+</LinearLayout>

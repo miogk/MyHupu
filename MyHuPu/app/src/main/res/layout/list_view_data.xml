@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_list_view_data"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bbsimgai" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tv_title_list_view_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#000000"
+            android:text="库里18分创个人职业生涯季后赛分区决赛单场新低" />
+
+
+        <TextView
+            android:id="@+id/tv_time_list_view_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:gravity="bottom"
+            android:text="timeeeeeeeeeeeeeeeee" />
+    </RelativeLayout>
+</LinearLayout>

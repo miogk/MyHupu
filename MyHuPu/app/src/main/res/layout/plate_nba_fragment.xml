@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/forum_plate_fragment_title"
+        android:text="主板" />
+
+    <View style="@style/forum_plate_fragment_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_shihuhu"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/shihuhu"
+            android:text="湿乎乎的话题" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_lanqiuchang"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/lanqiuchang"
+            android:text="篮球场" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_lurenwang"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/lurenwang"
+            android:text="路人王" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/tiantiannba"
+            android:text="天天NBA" />
+
+        <Button
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/meiriduikang"
+            android:text="每日对抗" />
+
+        <Button
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/naikegaozhong"
+            android:text="耐克高中联赛" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/forum_plate_fragment_title"
+        android:text="球队分区" />
+
+    <View style="@style/forum_plate_fragment_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_hou"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/hou"
+            android:text="火箭专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_cle"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/cle"
+            android:text="骑士专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_gsw"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/gsw"
+            android:text="勇士专区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_lal"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/lal"
+            android:text="湖人专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_sas"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/sas"
+            android:text="马刺专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_cel"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/cel"
+            android:text="凯尔特人专区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_oct"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/oct"
+            android:text="雷霆专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_lac"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/lac"
+            android:text="快船专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_nyn"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/nyn"
+            android:text="尼克斯专区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_chi"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/chi"
+            android:text="公牛专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_min"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/min"
+            android:text="森林狼专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_dal"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/dal"
+            android:text="独行侠专区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_nets"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/nets"
+            android:text="篮网专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_phi"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/phi"
+            android:text="76人专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_ind"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/ind"
+            android:text="步行者专区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_por"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/por"
+            android:text="开拓者专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_mia"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/mia"
+            android:text="热火专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_was"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/was"
+            android:text="奇才专区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_uth"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/uth"
+            android:text="爵士专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_mem"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/mem"
+            android:text="灰熊专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_phx"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/phx"
+            android:text="太阳专区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_sac"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/sac"
+            android:text="国王专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_pelicans"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/pelicans"
+            android:text="鹈鹕专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_mil"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/mil"
+            android:text="雄鹿专区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_tor"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/tor"
+            android:text="猛龙专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_den"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/den"
+            android:text="掘金专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_atl"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/atl"
+            android:text="老鹰专区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plate_nba_fragment_det"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/det"
+            android:text="活塞专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_orl"
+            style="@style/forum_plate_fragment_button"
+            android:drawableTop="@mipmap/orl"
+            android:text="魔术专区" />
+
+        <Button
+            android:id="@+id/plate_nba_fragment_bobcats"
+            style="@style/forum_plate_fragment_button"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@mipmap/bobcats"
+            android:text="黄蜂专区" />
+    </LinearLayout>
+</LinearLayout>

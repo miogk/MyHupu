@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentTop="true"
+    android:background="@android:color/holo_blue_light">
+
+    <ImageButton
+        android:id="@+id/title_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:paddingLeft="5dp"
+        android:src="@drawable/back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_bar_back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:src="@drawable/back"
+        android:text="取消"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="MIOGK"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/title_bar_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="10dp"
+        android:text="搜索" />
+
+    <TextView
+        android:id="@+id/title_bar_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:text="发表"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.miogk.myhupu.MainActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_rel2"
+        android:layout_below="@+id/title" />
+
+    <RelativeLayout
+        android:id="@+id/main_rel2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/main_activity_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/main_activity_radio_button_home"
+                style="@style/bottom_style"
+                android:checked="true"
+                android:drawableTop="@drawable/home_bg_change"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/main_activity_radio_button_game"
+                style="@style/bottom_style"
+                android:drawableTop="@drawable/game_bg_change"
+                android:text="比赛" />
+
+            <RadioButton
+                android:id="@+id/main_activity_radio_button_forum"
+                style="@style/bottom_style"
+                android:drawableTop="@drawable/forum_bg_change"
+                android:text="社区" />
+
+            <RadioButton
+                android:id="@+id/main_activity_radio_button_shihuo"
+                style="@style/bottom_style"
+                android:drawableTop="@drawable/shihuo_bg_change"
+                android:text="识货" />
+
+            <RadioButton
+                android:id="@+id/main_activity_radio_button_setting"
+                style="@style/bottom_style"
+                android:drawableTop="@drawable/setting_bg_change"
+                android:text="更多" />
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

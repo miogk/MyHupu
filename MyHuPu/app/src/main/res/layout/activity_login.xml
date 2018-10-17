@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.miogk.myhupu.setting.fragment.LoginActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/login_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#ff00"
+        app:tabIndicatorHeight="3dp"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabSelectedTextColor="#ff00"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码登录" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码登录" />
+    </android.support.design.widget.TabLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/login_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

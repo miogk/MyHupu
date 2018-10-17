@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/little_dark">
+
+        <com.example.miogk.myhupu.DragScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/forum_plate_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/forum_plate_nba"
+                    style="@style/forum_plate_style"
+                    android:text="NBA论坛" />
+
+                <RadioButton
+                    android:id="@+id/forum_plate_cba"
+                    style="@style/forum_plate_style"
+                    android:text="CBA论坛" />
+
+                <RadioButton
+                    android:id="@+id/forum_plate_dianjing"
+                    style="@style/forum_plate_style"
+                    android:text="电竞论坛" />
+
+                <RadioButton
+                    android:id="@+id/forum_plate_guojizuqiu"
+                    style="@style/forum_plate_style"
+                    android:text="国际足球论坛" />
+
+                <RadioButton
+                    android:id="@+id/forum_plate_zhongguozuqiu"
+                    style="@style/forum_plate_style"
+                    android:text="中国足球论坛" />
+
+                <RadioButton
+                    android:id="@+id/forum_plate_buxingjie"
+                    style="@style/forum_plate_style"
+                    android:text="步行街" />
+            </RadioGroup>
+        </com.example.miogk.myhupu.DragScrollView>
+    </LinearLayout>
+
+    <com.example.miogk.myhupu.DragScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <FrameLayout
+            android:id="@+id/forum_plate_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+    </com.example.miogk.myhupu.DragScrollView>
+</LinearLayout>

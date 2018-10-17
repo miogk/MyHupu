@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shihuhu_content_activity_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    tools:context="com.example.miogk.myhupu.radiobutton.forumraduibutton.plate.buttonActivities.ShihuhuContentActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light">
+
+        <ImageButton
+            android:id="@+id/shihuhu_content_activity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="5dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="MIOGK"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shihuhu_content_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/text_view_frame"
+            android:text="按时间"
+            android:textColor="#000" />
+
+        <ImageButton
+            android:id="@+id/shihuhu_content_shareSdk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@mipmap/icon_share" />
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/shihuhu_content_activity_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/shihuhu_content_activity_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/shihuhu_content_above_relpy_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shihuhu_content_activity_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="ZT 街上文豪来看下小学生神仙作诗，什么水平？ZT 街上文豪来看下小学生神仙作诗，什么水平？"
+                            android:lineSpacingMultiplier="1.3"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:textColor="#000"
+                            android:textSize="22sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/shihuhu_content_activity_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0分钟前" />
+
+                            <TextView
+                                android:id="@+id/shihuhu_content_activity_read"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/shihuhu_content_activity_time"
+                                android:text="阅读 0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="湿乎乎话题区"
+                                android:textColor="@color/blue" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/shihuhu_content_activity_head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/shihuhu"
+                            app:civ_border_color="#000"
+                            app:civ_border_width="1px"
+                            app:civ_circle_background_color="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/shihuhu_content_activity_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="hupu"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/shihuhu_content_activity_image_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/shihuhu_content_activity_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="as1dsa1ds1ad321sa1dsa1d31sa32d1sad
+as1dsa1ds1ad321sa1dsa1d31sa32d1sad
+as1dsa1ds1ad321sa1dsa1d31sa32d1sad"
+                        android:lineSpacingExtra="21dp"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <com.example.miogk.myhupu.utils.NestedListView
+                    android:id="@+id/shihuhu_content_activity_reply_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="1dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/little_dark">
+
+        <TextView
+            android:id="@+id/shihuhu_content_activity_previous_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/shihuhu_content_activity_total_page"
+            android:text="上页"
+            android:textColor="@color/deep_dark" />
+
+        <LinearLayout
+            android:id="@+id/shihuhu_content_activity_total_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shihuhu_content_activity_start_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/shihuhu_content_activity_end_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shihuhu_content_activity_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/shihuhu_content_activity_total_page"
+            android:text="下页"
+            android:textColor="@color/deep_dark" />
+
+        <ImageButton
+            android:id="@+id/shihuhu_content_activity_to_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/shihuhu_content_activity_reply_add"
+            android:background="@null"
+            android:src="@drawable/home_press" />
+
+        <ImageButton
+            android:id="@+id/shihuhu_content_activity_reply_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icons8plusmath40" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setting_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/little_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/setting_radio_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/atl"
+                app:civ_border_color="#ff00"
+                app:civ_border_width="12px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="登录/注册"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_radio_button_check_in"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/atl"
+                app:civ_border_color="#ff00"
+                app:civ_border_width="12px" />
+
+            <TextView
+                android:id="@+id/setting_radio_button_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="我的主页" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="1px"
+            android:background="#fff">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/lanqiuchang"
+                android:text="收藏" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/lanqiuchang"
+                android:text="浏览记录" />
+
+            <Button
+                android:id="@+id/setting_radio_button_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/lanqiuchang"
+                android:text="消息" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/lanqiuchang"
+                android:text="虎扑币" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@mipmap/lanqiuchang"
+                android:text="金豆" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="天天NBA" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:paddingLeft="5dp"
+                android:text="NBA每日对抗" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="彩票推荐" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="游戏中心" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="虎扑阅读" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="路人王" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="虎扑优选" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="JRs商城" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="邀请好友抢500元现金" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_radio_button_setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="设置" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/Setting_style"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:drawableLeft="@mipmap/lanqiuchang"
+                android:text="夜间模式" />
+
+            <CheckBox
+                android:id="@+id/night_light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
